@@ -3,44 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login & Sign-Up</title>
+    <title>UDSS '10 Alumni</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Login Page -->
-        <div id="login-page" class="page">
-            <h1>Login</h1>
-            <form id="login-form">
-                <label for="login-email">Email:</label>
-                <input type="email" id="login-email" name="email" required>
+    <header>
+        <nav>
+            <div class="logo">UDSS '10</div>
+            <ul class="nav-links">
+                <li><a href="#vision">Our Vision</a></li>
+                <li><a href="#members">Meet the Members</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>CELEBRATING EXCELLENCE AND UNITY</h1>
+        <p>We aim to foster unity and progress within the UDSS '10 Alumni community.</p>
+        <a href="#members" class="cta-btn">Meet the Members</a>
+    </section>
 
-                <label for="login-password">Password:</label>
-                <input type="password" id="login-password" name="password" required>
+    <section id="login" class="form-container">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button>Login</button>
+    </section>
 
-                <button type="submit">Login</button>
-                <p>Don't have an account? <a href="#" id="to-signup">Sign up</a></p>
-            </form>
-        </div>
+    <section id="signup" class="form-container">
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button>Sign Up</button>
+    </section>
 
-        <!-- Sign-Up Page -->
-        <div id="signup-page" class="page hidden">
-            <h1>Sign-Up</h1>
-            <form id="signup-form">
-                <label for="signup-email">Email:</label>
-                <input type="email" id="signup-email" name="email" required>
+    <footer>
+        <p>&copy; 2025 UDSS '10 Alumni. All rights reserved.</p>
+    </footer>
 
-                <label for="signup-password">Password:</label>
-                <input type="password" id="signup-password" name="password" required>
-
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-
-                <button type="submit">Sign Up</button>
-                <p>Already have an account? <a href="#" id="to-login">Login</a></p>
-            </form>
-        </div>
-    </div>
     <script src="script.js"></script>
 </body>
 </html>
